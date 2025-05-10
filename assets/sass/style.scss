@@ -26,24 +26,24 @@ TABLE OF CONTENTS:
 --------------------------------------------------------------*/
 
 // setting
-@import "setting/variable";
-@import "setting/mixin";
+@import 'setting/variable';
+@import 'setting/mixin';
 
 // base
-@import "base/base";
+@import 'base/base';
 
 // layout 
-@import "layout/header";
-@import "layout/navbar";
-@import "layout/footer";
-@import "layout/breadcrumb";
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/footer';
+@import 'layout/breadcrumb';
 
 // module
-@import "module/preloader";
-@import "module/button";
-@import "module/back-to-top";
-@import "module/form";
+@import 'module/preloader';
+@import 'module/button';
+@import 'module/back-to-top';
+@import 'module/form';
 
 // theme
-@import "theme/spacing";
-@import "theme/theme";
+@import 'theme/spacing';
+@import 'theme/theme';

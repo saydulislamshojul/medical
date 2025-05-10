@@ -1,0 +1,21 @@
+.header-top {
+  background-color: $secondary-color;
+  padding: 10px 0;
+
+  .header-info {
+    li {
+      display: inline;
+      margin-right: 30px;
+
+      a {
+        color: $white-color;
+        font-weight: 500;
+        transition: $transition;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
