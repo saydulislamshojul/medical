@@ -1,0 +1,49 @@
+/*-------------------------------------------------------------
+theme name: Physicmed - Medical HTML Template
+theme uri: 
+author: saydul
+author uri: 
+description: 
+tags: 
+version: 1.0.0
+text domain: physicmed
+-------------------------------------------------------------*/
+
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> author css
+>> header
+>> navbar
+>> footer
+>> breadcrumb
+>> preloader
+>> button 
+>> back to top
+>> form
+>> spacing
+>> theme
+--------------------------------------------------------------*/
+
+// setting
+@import "setting/variable";
+@import "setting/mixin";
+
+// base
+@import "base/base";
+
+// layout 
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
+@import "layout/breadcrumb";
+
+// module
+@import "module/preloader";
+@import "module/button";
+@import "module/back-to-top";
+@import "module/form";
+
+// theme
+@import "theme/spacing";
+@import "theme/theme";
