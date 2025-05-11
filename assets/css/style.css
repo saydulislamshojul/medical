@@ -1,39 +1,65 @@
-@import"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap";
-
+/*-------------------------------------------------------------
+theme name: Physicmed - Medical HTML Template
+theme uri: 
+author: saydul
+author uri: 
+description: 
+tags: 
+version: 1.0.0
+text domain: physicmed
+-------------------------------------------------------------*/
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> author css
+>> header
+>> navbar
+>> footer
+>> breadcrumb
+>> preloader
+>> button 
+>> back to top
+>> form
+>> spacing
+>> theme
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* breakpoint */
+/* author css */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #0b114a;
-  font-weight: 400
+  font-weight: 400;
 }
 
 h1 {
   font-size: 72px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 h2 {
   font-size: 48px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 36px
+  font-size: 36px;
 }
 
 h4 {
   font-size: 24px;
-  font-weight: 500
+  font-weight: 500;
 }
 
 h5 {
-  font-size: 20px
+  font-size: 20px;
 }
 
 h6 {
   font-size: 16px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 h1,
@@ -46,22 +72,22 @@ h6 {
   line-height: 1.2;
   color: #0b114a;
   text-transform: capitalize;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 p {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 ul {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
 }
 
 a,
 a:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 a:focus,
@@ -69,383 +95,399 @@ input:focus,
 textarea:focus,
 select:focus,
 button:focus {
-  outline: none
+  outline: none;
 }
 
 button {
-  cursor: pointer
+  cursor: pointer;
 }
 
 img {
   width: 100%;
   height: auto;
-  display: block
+  display: block;
 }
 
+/* header */
 .header-top {
   background-color: #0b114a;
   padding: 10px 0;
-  color: #fff
 }
 
+.header-top .header-info li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.header-top .header-info li a {
+  color: #ffffff;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.header-top .header-info li a:hover {
+  color: #1ac167;
+}
+
+/* spacing */
 .pt-10 {
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 .pt-20 {
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 .pt-30 {
-  padding-top: 30px
+  padding-top: 30px;
 }
 
 .pt-40 {
-  padding-top: 40px
+  padding-top: 40px;
 }
 
 .pt-50 {
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 .pt-60 {
-  padding-top: 60px
+  padding-top: 60px;
 }
 
 .pt-70 {
-  padding-top: 70px
+  padding-top: 70px;
 }
 
 .pt-80 {
-  padding-top: 80px
+  padding-top: 80px;
 }
 
 .pt-90 {
-  padding-top: 90px
+  padding-top: 90px;
 }
 
 .pt-100 {
-  padding-top: 100px
+  padding-top: 100px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pt-100 {
-    padding-top: 60px
+    padding-top: 60px;
   }
 }
 
 .pt-105 {
-  padding-top: 105px
+  padding-top: 105px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pt-105 {
-    padding-top: 65px
+    padding-top: 65px;
   }
 }
 
 .pt-110 {
-  padding-top: 110px
+  padding-top: 110px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pt-110 {
-    padding-top: 70px
+    padding-top: 70px;
   }
 }
 
 .pt-115 {
-  padding-top: 115px
+  padding-top: 115px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pt-115 {
-    padding-top: 75px
+    padding-top: 75px;
   }
 }
 
 .pt-120 {
-  padding-top: 120px
+  padding-top: 120px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pt-120 {
-    padding-top: 80px
+    padding-top: 80px;
   }
 }
 
 .pb-10 {
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
 .pb-20 {
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .pb-30 {
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 
 .pb-40 {
-  padding-bottom: 40px
+  padding-bottom: 40px;
 }
 
 .pb-50 {
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 
 .pb-60 {
-  padding-bottom: 60px
+  padding-bottom: 60px;
 }
 
 .pb-70 {
-  padding-bottom: 70px
+  padding-bottom: 70px;
 }
 
 .pb-80 {
-  padding-bottom: 80px
+  padding-bottom: 80px;
 }
 
 .pb-90 {
-  padding-bottom: 90px
+  padding-bottom: 90px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pb-90 {
-    padding-bottom: 50px
+    padding-bottom: 50px;
   }
 }
 
 .pb-100 {
-  padding-bottom: 100px
+  padding-bottom: 100px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pb-100 {
-    padding-bottom: 60px
+    padding-bottom: 60px;
   }
 }
 
 .pb-105 {
-  padding-bottom: 105px
+  padding-bottom: 105px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pb-105 {
-    padding-bottom: 65px
+    padding-bottom: 65px;
   }
 }
 
 .pb-110 {
-  padding-bottom: 110px
+  padding-bottom: 110px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pb-110 {
-    padding-bottom: 70px
+    padding-bottom: 70px;
   }
 }
 
 .pb-115 {
-  padding-bottom: 115px
+  padding-bottom: 115px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pb-115 {
-    padding-bottom: 75px
+    padding-bottom: 75px;
   }
 }
 
 .pb-120 {
-  padding-bottom: 120px
+  padding-bottom: 120px;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .pb-120 {
-    padding-bottom: 80px
+    padding-bottom: 80px;
   }
 }
 
 .py-10 {
-  padding: 10px 0
+  padding: 10px 0;
 }
 
 .py-20 {
-  padding: 20px 0
+  padding: 20px 0;
 }
 
 .py-30 {
-  padding: 30px 0
+  padding: 30px 0;
 }
 
 .py-40 {
-  padding: 40px 0
+  padding: 40px 0;
 }
 
 .py-50 {
-  padding: 50px 0
+  padding: 50px 0;
 }
 
 .py-60 {
-  padding: 60px 0
+  padding: 60px 0;
 }
 
 .py-70 {
-  padding: 70px 0
+  padding: 70px 0;
 }
 
 .py-80 {
-  padding: 80px 0
+  padding: 80px 0;
 }
 
 .py-90 {
-  padding: 90px 0
+  padding: 90px 0;
 }
 
 .py-100 {
-  padding: 100px 0
+  padding: 100px 0;
 }
 
 .py-105 {
-  padding: 105px 0
+  padding: 105px 0;
 }
 
 .py-110 {
-  padding: 110px 0
+  padding: 110px 0;
 }
 
 .py-115 {
-  padding: 115px 0
+  padding: 115px 0;
 }
 
 .py-120 {
-  padding: 120px 0
+  padding: 120px 0;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .py-120 {
-    padding: 80px 0
+    padding: 80px 0;
   }
 }
 
 .mt-10 {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .mt-20 {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .mt-30 {
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .mt-40 {
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 .mt-50 {
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 .mt-60 {
-  margin-top: 60px
+  margin-top: 60px;
 }
 
 .mt-70 {
-  margin-top: 70px
+  margin-top: 70px;
 }
 
 .mt-80 {
-  margin-top: 80px
+  margin-top: 80px;
 }
 
 .mt-90 {
-  margin-top: 90px
+  margin-top: 90px;
 }
 
 .mt-100 {
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 .mb-10 {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .mb-20 {
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .mb-30 {
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .mb-40 {
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
 .mb-50 {
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .mb-60 {
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
 
 .mb-70 {
-  margin-bottom: 70px
+  margin-bottom: 70px;
 }
 
 .mb-80 {
-  margin-bottom: 80px
+  margin-bottom: 80px;
 }
 
 .mb-90 {
-  margin-bottom: 90px
+  margin-bottom: 90px;
 }
 
 .mb-100 {
-  margin-bottom: 100px
+  margin-bottom: 100px;
 }
 
 .my-10 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-20 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-30 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-40 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-50 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-60 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-70 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-80 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-90 {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .my-100 {
-  margin: 10px 0
+  margin: 10px 0;
 }
-
-/*# sourceMappingURL=style.css.map */
