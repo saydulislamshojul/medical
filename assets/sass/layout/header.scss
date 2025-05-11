@@ -7,6 +7,16 @@
     li {
       display: inline;
       margin-right: 30px;
+      @include landscape-phone{
+        display: block;
+        margin-right: 0;
+        margin-right: 10px;
+      }
+      @include portrait-phone{
+        display: block;
+        margin-right: 0;
+        margin-right: 10px;
+      }
 
       a {
         color: $white-color;
@@ -16,6 +26,27 @@
         &:hover {
           color: $primary-color;
         }
+      }
+    }
+  }
+  .header-button{
+    text-align: right;
+      @include tablet{
+        text-align: left;
+        margin-top: 10px;
+      }
+      @include landscape-phone{
+        text-align: left;
+        margin-top: 10px;
+      }
+      @include portrait-phone{
+        text-align: left;
+        margin-top: 10px;
+      }
+    .primary-btn{
+      
+      @include screen-360{
+        padding: 8px 18px;
       }
     }
   }
