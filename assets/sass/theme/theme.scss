@@ -1,1 +1,83 @@
 /* hero section */
+.hero-section {
+  background-image: url(/assets/images/hero-bg.png);
+  position: relative;
+
+  .hero-text {
+    padding: 300px 0px;
+
+    @include desktop {
+      padding: 150px 0px;
+    }
+
+    @include tablet {
+      padding: 120px 0px;
+      text-align: center;
+    }
+
+    @include landscape-phone {
+      padding: 100px 0px;
+      text-align: center;
+    }
+
+    @include portrait-phone {
+      padding: 100px 0px;
+      text-align: center;
+    }
+
+    .title {
+      @include desktop {
+        font-size: 55px;
+      }
+
+      @include landscape-phone {
+        font-size: 50px;
+      }
+
+      @include portrait-phone {
+        font-size: 50px;
+      }
+    }
+
+    span {
+      color: $primary-color;
+    }
+
+    .primary-btn {
+      margin-right: 30px;
+
+      @include portrait-phone {
+        padding: 8px 16px;
+      }
+    }
+
+    .secondary-btn {
+      @include portrait-phone {
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  .hero-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-image: url(/assets/images/hero-shapes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include landscape-phone {
+      display: none;
+    }
+
+    @include portrait-phone {
+      display: none;
+    }
+  }
+}

@@ -37,29 +37,35 @@ body {
 h1 {
   font-size: 72px;
   font-weight: 700;
+  line-height: 1.1;
 }
 
 h2 {
   font-size: 48px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 36px;
+  line-height: 1.2;
 }
 
 h4 {
   font-size: 24px;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 h5 {
   font-size: 20px;
+  line-height: 1.2;
 }
 
 h6 {
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h1,
@@ -69,7 +75,6 @@ h4,
 h5,
 h6 {
   font-family: "Rubik", sans-serif;
-  line-height: 1.2;
   color: #0b114a;
   text-transform: capitalize;
   margin-bottom: 0;
@@ -195,8 +200,29 @@ img {
 }
 
 .primary-btn:hover {
+  color: #1ac167;
   background-color: transparent;
   border: 1px solid #1ac167;
+}
+
+.secondary-btn {
+  color: #0b114a;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: 1px solid #0b114a;
+  border-radius: 8px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.secondary-btn:hover {
+  color: #ffffff;
+  background-color: #0b114a;
 }
 
 /* spacing */
@@ -529,7 +555,7 @@ img {
 }
 
 .my-30 {
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .my-40 {
@@ -558,4 +584,108 @@ img {
 
 .my-100 {
   margin: 10px 0;
+}
+
+/* hero section */
+.hero-section {
+  background-image: url(/assets/images/hero-bg.png);
+  position: relative;
+}
+
+.hero-section .hero-text {
+  padding: 300px 0px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-section .hero-text {
+    padding: 150px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section .hero-text {
+    padding: 120px 0px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-section .hero-text {
+    padding: 100px 0px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-text {
+    padding: 100px 0px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-section .hero-text .title {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-section .hero-text .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-text .title {
+    font-size: 50px;
+  }
+}
+
+.hero-section .hero-text span {
+  color: #1ac167;
+}
+
+.hero-section .hero-text .primary-btn {
+  margin-right: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-text .primary-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-text .secondary-btn {
+    padding: 8px 16px;
+  }
+}
+
+.hero-section .hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-image: url(/assets/images/hero-shapes.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section .hero-img {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-section .hero-img {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-img {
+    display: none;
+  }
 }
