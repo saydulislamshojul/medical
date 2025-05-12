@@ -42,17 +42,17 @@ h1 {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
     font-size: 54px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   h1 {
     font-size: 50px;
   }
@@ -62,6 +62,18 @@ h2 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h2 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -634,52 +646,52 @@ img {
   margin: 10px 0;
 }
 
+.my-120 {
+  margin: 120px 0;
+}
+
 /* hero section */
-.hero-section {
+.hero-area {
   background-image: url(../images/hero-bg.png);
   position: relative;
 }
 
-.hero-section .hero-text {
+.hero-area .hero-content {
   padding: 250px 0px;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-section .hero-text {
+  .hero-area .hero-content {
     padding: 150px 0px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-section .hero-text {
+  .hero-area .hero-content {
     padding: 100px 0px 500px;
     text-align: center;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .hero-section .hero-text {
+  .hero-area .hero-content {
     padding: 80px 0px 420px;
     text-align: center;
   }
 }
 
 @media (max-width: 575.98px) {
-  .hero-section .hero-text {
+  .hero-area .hero-content {
     padding: 80px 0px 320px;
     text-align: center;
   }
 }
 
-.hero-section .hero-text .title span {
-  color: #1ac167;
-}
-
-.hero-section .hero-text .primary-btn {
+.hero-area .hero-content .primary-btn {
   margin-right: 30px;
 }
 
-.hero-section .hero-img img {
+.hero-area .hero-img img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -688,13 +700,13 @@ img {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-section .hero-img img {
+  .hero-area .hero-img img {
     height: 480px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-section .hero-img img {
+  .hero-area .hero-img img {
     height: 480px;
     right: 50%;
     -webkit-transform: translateX(50%);
@@ -704,7 +716,7 @@ img {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .hero-section .hero-img img {
+  .hero-area .hero-img img {
     height: 400px;
     right: 50%;
     -webkit-transform: translateX(50%);
@@ -714,11 +726,51 @@ img {
 }
 
 @media (max-width: 575.98px) {
-  .hero-section .hero-img img {
+  .hero-area .hero-img img {
     height: 290px;
     right: 50%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
+  }
+}
+
+.title span {
+  color: #1ac167;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-area {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-area {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-area {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-area .about-content {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-area .about-content {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-area .about-content {
+    margin-top: 40px;
   }
 }

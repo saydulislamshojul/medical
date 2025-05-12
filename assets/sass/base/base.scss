@@ -13,14 +13,14 @@ h1 {
   line-height: 1.1;
 
   @include desktop {
+    font-size: 60px;
+  }
+
+  @include tablet {
     font-size: 54px;
   }
 
-  @include landscape-phone {
-    font-size: 50px;
-  }
-
-  @include portrait-phone {
+  @include all-phone {
     font-size: 50px;
   }
 }
@@ -29,6 +29,16 @@ h2 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
+
+
+  @include tablet {
+    font-size: 44px;
+  }
+
+  @include all-phone {
+    font-size: 40px;
+  }
+
 }
 
 h3 {
