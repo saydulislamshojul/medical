@@ -4,9 +4,21 @@
   padding: 10px 0;
 
   .header-info {
+    @include tablet {
+      text-align: center;
+    }
+
+    @include all-phone {
+      text-align: center;
+    }
+
     li {
       display: inline;
       margin-right: 30px;
+
+      @include tablet {
+        text-align: center;
+      }
 
       @include landscape-phone {
         display: block;
@@ -36,17 +48,17 @@
     text-align: right;
 
     @include tablet {
-      text-align: left;
-      margin-top: 10px;
+      text-align: center;
+      margin-top: 14px;
     }
 
     @include landscape-phone {
-      text-align: left;
-      margin-top: 10px;
+      text-align: center;
+      margin-top: 14px;
     }
 
     @include portrait-phone {
-      text-align: left;
+      text-align: center;
       margin-top: 10px;
       padding: 8px 18px;
     }

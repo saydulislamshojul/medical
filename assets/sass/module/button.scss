@@ -10,6 +10,10 @@
   display: inline-block;
   transition: $transition;
 
+  @include portrait-phone {
+    padding: 8px 16px;
+  }
+
   &:hover {
     color: $primary-color;
     background-color: transparent;
@@ -28,6 +32,10 @@
   border-radius: 8px;
   display: inline-block;
   transition: $transition;
+
+  @include portrait-phone {
+    padding: 8px 16px;
+  }
 
   &:hover {
     color: $white-color;

@@ -1,43 +1,31 @@
 /* hero section */
 .hero-section {
-  background-image: url(/assets/images/hero-bg.png);
+  background-image: url(../images/hero-bg.png);
   position: relative;
 
   .hero-text {
-    padding: 300px 0px;
+    padding: 250px 0px;
 
     @include desktop {
       padding: 150px 0px;
     }
 
     @include tablet {
-      padding: 120px 0px;
+      padding: 100px 0px 500px;
       text-align: center;
     }
 
     @include landscape-phone {
-      padding: 100px 0px;
+      padding: 80px 0px 420px;
       text-align: center;
     }
 
     @include portrait-phone {
-      padding: 100px 0px;
+      padding: 80px 0px 320px;
       text-align: center;
     }
 
     .title {
-      @include desktop {
-        font-size: 55px;
-      }
-
-      @include landscape-phone {
-        font-size: 50px;
-      }
-
-      @include portrait-phone {
-        font-size: 50px;
-      }
-
       span {
         color: $primary-color;
       }
@@ -45,39 +33,38 @@
 
     .primary-btn {
       margin-right: 30px;
-
-      @include portrait-phone {
-        padding: 8px 16px;
-      }
-    }
-
-    .secondary-btn {
-      @include portrait-phone {
-        padding: 8px 16px;
-      }
     }
   }
 
   .hero-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    background-image: url(/assets/images/hero-shapes.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: auto;
+      height: 700px;
 
-    @include tablet {
-      display: none;
-    }
+      @include desktop {
+        height: 480px;
+      }
 
-    @include landscape-phone {
-      display: none;
-    }
+      @include tablet {
+        height: 480px;
+        right: 50%;
+        transform: translateX(50%);
+      }
 
-    @include portrait-phone {
-      display: none;
+      @include landscape-phone {
+        height: 400px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      @include portrait-phone {
+        height: 290px;
+        right: 50%;
+        transform: translateX(50%);
+      }
     }
   }
 }

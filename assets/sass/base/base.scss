@@ -11,6 +11,18 @@ h1 {
   font-size: 72px;
   font-weight: 700;
   line-height: 1.1;
+
+  @include desktop {
+    font-size: 54px;
+  }
+
+  @include landscape-phone {
+    font-size: 50px;
+  }
+
+  @include portrait-phone {
+    font-size: 50px;
+  }
 }
 
 h2 {
