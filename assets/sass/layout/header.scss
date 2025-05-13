@@ -59,15 +59,9 @@
 
     @include portrait-phone {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 5px;
       padding: 8px 18px;
     }
 
-    .primary-btn {
-
-      @include screen-360 {
-        padding: 8px 18px;
-      }
-    }
   }
 }
