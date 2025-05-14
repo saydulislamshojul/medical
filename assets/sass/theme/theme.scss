@@ -1,6 +1,6 @@
 /* hero section */
 .hero-area {
-  background-image: url(../images/hero-bg.png);
+  background: url('../images/hero-bg.png') no-repeat center/cover;
   position: relative;
 
   .hero-content {
@@ -23,6 +23,12 @@
     @include portrait-phone {
       padding: 80px 0px 320px;
       text-align: center;
+    }
+
+    .title {
+      span {
+        color: $primary-color;
+      }
     }
 
 
@@ -64,12 +70,6 @@
   }
 }
 
-.title {
-  span {
-    color: $primary-color;
-  }
-}
-
 .about-area {
   @include tablet {
     text-align: center;
@@ -95,5 +95,70 @@
     @include portrait-phone {
       margin-top: 40px;
     }
+  }
+}
+
+.section-top {
+  .title {
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.service-area {
+  background-color: $off-white;
+
+  .service-single {
+    padding: 40px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+
+    @include desktop {
+      padding: 28px;
+    }
+
+    .icon {
+      font-size: 45px;
+      display: inline-block;
+      padding: 10px 22px;
+      background-color: rgba($color: $primary-color, $alpha: .2);
+      border: none;
+      border-radius: 8px;
+      transition: all .2s;
+
+      @include desktop {
+        padding: 10px 20px;
+      }
+      @include landscape-phone {
+        padding: 10px 20px;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    .title {
+      a {
+        color: $secondary-color;
+        transition: all .2s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.link-page {
+  color: $secondary-color;
+  text-transform: capitalize;
+  font-weight: 700;
+  transition: all .2s;
+
+  &:hover {
+    color: $primary-color;
   }
 }

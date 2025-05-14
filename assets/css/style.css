@@ -646,7 +646,7 @@ img {
 
 /* hero section */
 .hero-area {
-  background-image: url(../images/hero-bg.png);
+  background: url("../images/hero-bg.png") no-repeat center/cover;
   position: relative;
 }
 
@@ -679,6 +679,10 @@ img {
     padding: 80px 0px 320px;
     text-align: center;
   }
+}
+
+.hero-area .hero-content .title span {
+  color: #1ac167;
 }
 
 .hero-area .hero-content .primary-btn {
@@ -729,42 +733,110 @@ img {
   }
 }
 
-.title span {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-area {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-area {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-area {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-area .about-content {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-area .about-content {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-area .about-content {
+    margin-top: 40px;
+  }
+}
+
+.section-top .title span {
   color: #1ac167;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .about-area {
-    text-align: center;
+.service-area {
+  background-color: #fafafa;
+}
+
+.service-area .service-single {
+  padding: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service-area .service-single {
+    padding: 28px;
+  }
+}
+
+.service-area .service-single .icon {
+  font-size: 45px;
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: rgba(26, 193, 103, 0.2);
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service-area .service-single .icon {
+    padding: 10px 20px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .about-area {
-    text-align: center;
+  .service-area .service-single .icon {
+    padding: 10px 20px;
   }
 }
 
-@media (max-width: 575.98px) {
-  .about-area {
-    text-align: center;
-  }
+.service-area .service-single .icon:hover {
+  background-color: #1ac167;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .about-area .about-content {
-    margin-top: 40px;
-  }
+.service-area .service-single .title a {
+  color: #0b114a;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .about-area .about-content {
-    margin-top: 40px;
-  }
+.service-area .service-single .title a:hover {
+  color: #1ac167;
 }
 
-@media (max-width: 575.98px) {
-  .about-area .about-content {
-    margin-top: 40px;
-  }
+.link-page {
+  color: #0b114a;
+  text-transform: capitalize;
+  font-weight: 700;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.link-page:hover {
+  color: #1ac167;
 }
