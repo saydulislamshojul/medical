@@ -783,45 +783,25 @@ img {
   border-radius: 10px;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .service-area .service-single {
-    padding: 28px;
-  }
-}
-
 .service-area .service-single .icon {
   font-size: 45px;
   display: inline-block;
-  padding: 10px 22px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
   background-color: rgba(26, 193, 103, 0.2);
-  border: none;
   border-radius: 8px;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .service-area .service-single .icon {
-    padding: 10px 20px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .service-area .service-single .icon {
-    padding: 10px 20px;
-  }
-}
-
-.service-area .service-single .icon:hover {
-  background-color: #1ac167;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .service-area .service-single .title a {
   color: #0b114a;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .service-area .service-single .title a:hover {
