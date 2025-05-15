@@ -128,15 +128,16 @@
 
     }
 
-    .title {
-      a {
-        color: $secondary-color;
-        transition: $transition;
+  }
+}
 
-        &:hover {
-          color: $primary-color;
-        }
-      }
+.title {
+  a {
+    color: $secondary-color;
+    transition: $transition;
+
+    &:hover {
+      color: $primary-color;
     }
   }
 }
@@ -145,9 +146,62 @@
   color: $secondary-color;
   text-transform: capitalize;
   font-weight: 700;
+  display: inline-block;
   transition: all .2s;
 
   &:hover {
     color: $primary-color;
+  }
+}
+
+
+.doctor-area {
+  background-image: linear-gradient($white-color 0%, $white-color, $off-white 55%, $off-white 100%);
+
+  @include tablet {
+    background-image: linear-gradient($white-color 0%, $white-color 35%, $off-white 35%, $off-white 100%);
+  }
+
+  @include all-phone {
+    background-image: linear-gradient($white-color 0%, $white-color 20%, $off-white 20%, $off-white 100%);
+  }
+
+  .doctor-single {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .doctor-content {
+    text-align: center;
+    background-color: $white-color;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+
+    .social-icons {
+      margin-top: -50px;
+
+      li {
+        display: inline;
+        margin: 0px 10px;
+
+        span {
+          color: $white-color;
+          background-color: $secondary-color;
+          font-size: 20px;
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .designation {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+      display: block;
+    }
   }
 }

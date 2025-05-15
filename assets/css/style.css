@@ -797,14 +797,14 @@ img {
   transition: all 0.2s ease-in;
 }
 
-.service-area .service-single .title a {
+.title a {
   color: #0b114a;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.service-area .service-single .title a:hover {
+.title a:hover {
   color: #1ac167;
 }
 
@@ -812,6 +812,7 @@ img {
   color: #0b114a;
   text-transform: capitalize;
   font-weight: 700;
+  display: inline-block;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
@@ -819,4 +820,68 @@ img {
 
 .link-page:hover {
   color: #1ac167;
+}
+
+.doctor-area {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#ffffff), color-stop(55%, #fafafa), to(#fafafa));
+  background-image: -webkit-linear-gradient(#ffffff 0%, #ffffff, #fafafa 55%, #fafafa 100%);
+  background-image: -o-linear-gradient(#ffffff 0%, #ffffff, #fafafa 55%, #fafafa 100%);
+  background-image: linear-gradient(#ffffff 0%, #ffffff, #fafafa 55%, #fafafa 100%);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .doctor-area {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(35%, #ffffff), color-stop(35%, #fafafa), to(#fafafa));
+    background-image: -webkit-linear-gradient(#ffffff 0%, #ffffff 35%, #fafafa 35%, #fafafa 100%);
+    background-image: -o-linear-gradient(#ffffff 0%, #ffffff 35%, #fafafa 35%, #fafafa 100%);
+    background-image: linear-gradient(#ffffff 0%, #ffffff 35%, #fafafa 35%, #fafafa 100%);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .doctor-area {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(20%, #ffffff), color-stop(20%, #fafafa), to(#fafafa));
+    background-image: -webkit-linear-gradient(#ffffff 0%, #ffffff 20%, #fafafa 20%, #fafafa 100%);
+    background-image: -o-linear-gradient(#ffffff 0%, #ffffff 20%, #fafafa 20%, #fafafa 100%);
+    background-image: linear-gradient(#ffffff 0%, #ffffff 20%, #fafafa 20%, #fafafa 100%);
+  }
+}
+
+.doctor-area .doctor-single {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.doctor-area .doctor-content {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.doctor-area .doctor-content .social-icons {
+  margin-top: -50px;
+}
+
+.doctor-area .doctor-content .social-icons li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+.doctor-area .doctor-content .social-icons li span {
+  color: #ffffff;
+  background-color: #0b114a;
+  font-size: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.doctor-area .doctor-content .designation {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
 }
