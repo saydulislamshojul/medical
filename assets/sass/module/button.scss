@@ -22,16 +22,10 @@
 }
 
 .secondary-btn {
+  @extend .primary-btn;
   color: $secondary-color;
   background-color: transparent;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 12px 24px;
   border: 1px solid $secondary-color;
-  border-radius: 8px;
-  display: inline-block;
-  transition: $transition;
 
   @include portrait-phone {
     padding: 8px 16px;
@@ -40,5 +34,6 @@
   &:hover {
     color: $white-color;
     background-color: $secondary-color;
+    border: 1px solid $secondary-color;
   }
 }

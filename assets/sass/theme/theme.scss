@@ -108,36 +108,33 @@
 
 .service-area {
   background-color: $off-white;
-
-  .service-single {
-    padding: 40px;
-    border: 1px solid $border-color;
-    border-radius: 10px;
-
-
-    .icon {
-      font-size: 45px;
-      display: inline-block;
-      width: 80px;
-      height: 80px;
-      line-height: 80px;
-      text-align: center;
-      background-color: rgba($primary-color, .2);
-      border-radius: 8px;
-      transition: $transition;
-
-    }
-
-  }
 }
 
-.title {
-  a {
-    color: $secondary-color;
-    transition: $transition;
+.service-single {
+  padding: 40px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
 
-    &:hover {
-      color: $primary-color;
+  .icon {
+    font-size: 45px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: rgba($primary-color, .2);
+    border-radius: 8px;
+    transition: $transition;
+  }
+
+  .title {
+    a {
+      color: $secondary-color;
+      transition: $transition;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
@@ -154,12 +151,12 @@
   }
 }
 
-
 .doctor-area {
-  background: url(../images/doctor-pattern.png) no-repeat top right/contain;
+  background: url('../images/doctor-pattern.png') no-repeat top right/contain;
   position: relative;
   z-index: 1;
-  &::before{
+
+  &::before {
     content: "";
     width: 100%;
     height: 45%;
@@ -168,10 +165,12 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    @include tablet{
+
+    @include tablet {
       height: 70%;
     }
-    @include all-phone{
+
+    @include all-phone {
       height: 70%;
     }
   }
@@ -181,37 +180,73 @@
     margin-bottom: 30px;
   }
 
-  .doctor-content {
-    text-align: center;
-    background-color: $white-color;
-    padding: 30px;
-    border-radius: 0 0 20px 20px;
+}
 
-    .social-icons {
-      margin-top: -50px;
+.doctor-content {
+  text-align: center;
+  background-color: $white-color;
+  padding: 30px;
+  border-radius: 0 0 20px 20px;
 
-      li {
-        display: inline;
-        margin: 0px 10px;
+  .social-icons {
+    margin-top: -50px;
 
-        span {
-          color: $white-color;
-          background-color: $secondary-color;
-          font-size: 20px;
-          display: inline-block;
-          width: 40px;
-          height: 40px;
-          line-height: 40px;
-          border-radius: 50%;
+    li {
+      display: inline;
+      margin: 0px 10px;
+
+      a {
+        color: $white-color;
+        background-color: $secondary-color;
+        font-size: 20px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        transition: $transition;
+
+        &:hover {
+          background-color: $primary-color;
         }
       }
     }
+  }
 
-    .designation {
-      font-size: 18px;
-      font-weight: 600;
-      text-transform: capitalize;
-      display: block;
+  .title {
+    a {
+      color: $secondary-color;
+      transition: $transition;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
+  }
+
+  .designation {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+  }
+}
+
+.testimonial-area {
+  position: relative;
+}
+
+.testimonial-single {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px $border-color;
+  margin-bottom: 30px;
+
+  span {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: capitalize;
+    display: block;
+    padding-top: 10px;
   }
 }

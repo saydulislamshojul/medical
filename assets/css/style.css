@@ -226,7 +226,7 @@ img {
   }
 }
 
-.primary-btn {
+.primary-btn, .secondary-btn {
   color: #ffffff;
   background-color: #1ac167;
   font-size: 15px;
@@ -242,12 +242,12 @@ img {
 }
 
 @media (max-width: 575.98px) {
-  .primary-btn {
+  .primary-btn, .secondary-btn {
     padding: 8px 16px;
   }
 }
 
-.primary-btn:hover {
+.primary-btn:hover, .secondary-btn:hover {
   color: #1ac167;
   background-color: transparent;
   border: 1px solid #1ac167;
@@ -256,16 +256,7 @@ img {
 .secondary-btn {
   color: #0b114a;
   background-color: transparent;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 12px 24px;
   border: 1px solid #0b114a;
-  border-radius: 8px;
-  display: inline-block;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 }
 
 @media (max-width: 575.98px) {
@@ -277,6 +268,7 @@ img {
 .secondary-btn:hover {
   color: #ffffff;
   background-color: #0b114a;
+  border: 1px solid #0b114a;
 }
 
 /* spacing */
@@ -685,7 +677,7 @@ img {
   color: #1ac167;
 }
 
-.hero-area .hero-content .primary-btn {
+.hero-area .hero-content .primary-btn, .hero-area .hero-content .secondary-btn {
   margin-right: 30px;
 }
 
@@ -777,13 +769,13 @@ img {
   background-color: #fafafa;
 }
 
-.service-area .service-single {
+.service-single {
   padding: 40px;
   border: 1px solid #eaeaea;
   border-radius: 10px;
 }
 
-.service-area .service-single .icon {
+.service-single .icon {
   font-size: 45px;
   display: inline-block;
   width: 80px;
@@ -797,14 +789,14 @@ img {
   transition: all 0.2s ease-in;
 }
 
-.title a {
+.service-single .title a {
   color: #0b114a;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.title a:hover {
+.service-single .title a:hover {
   color: #1ac167;
 }
 
@@ -823,7 +815,7 @@ img {
 }
 
 .doctor-area {
-  background: url(../images/doctor-pattern.png) no-repeat top right/contain;
+  background: url("../images/doctor-pattern.png") no-repeat top right/contain;
   position: relative;
   z-index: 1;
 }
@@ -856,23 +848,23 @@ img {
   margin-bottom: 30px;
 }
 
-.doctor-area .doctor-content {
+.doctor-content {
   text-align: center;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 0 0 20px 20px;
 }
 
-.doctor-area .doctor-content .social-icons {
+.doctor-content .social-icons {
   margin-top: -50px;
 }
 
-.doctor-area .doctor-content .social-icons li {
+.doctor-content .social-icons li {
   display: inline;
   margin: 0px 10px;
 }
 
-.doctor-area .doctor-content .social-icons li span {
+.doctor-content .social-icons li a {
   color: #ffffff;
   background-color: #0b114a;
   font-size: 20px;
@@ -881,11 +873,49 @@ img {
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.doctor-area .doctor-content .designation {
+.doctor-content .social-icons li a:hover {
+  background-color: #1ac167;
+}
+
+.doctor-content .title a {
+  color: #0b114a;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.doctor-content .title a:hover {
+  color: #1ac167;
+}
+
+.doctor-content .designation {
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
   display: block;
+}
+
+.testimonial-area {
+  position: relative;
+}
+
+.testimonial-single {
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px #eaeaea;
+  box-shadow: 0px 0px 10px #eaeaea;
+  margin-bottom: 30px;
+}
+
+.testimonial-single span {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: capitalize;
+  display: block;
+  padding-top: 10px;
 }
