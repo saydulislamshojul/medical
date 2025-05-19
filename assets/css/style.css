@@ -912,6 +912,10 @@ img {
   margin-bottom: 30px;
 }
 
+.testimonial-single .testimonial-content {
+  padding-left: 10px;
+}
+
 .testimonial-single span {
   font-size: 18px;
   font-weight: 900;
