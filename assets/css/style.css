@@ -904,12 +904,24 @@ img {
   position: relative;
 }
 
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1ac167;
+}
+
+.slick-dots li button:before {
+  font-size: 35px;
+}
+
 .testimonial-single {
   padding: 30px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px #eaeaea;
   box-shadow: 0px 0px 10px #eaeaea;
-  margin-bottom: 30px;
+  margin: 20px 15px;
 }
 
 .testimonial-single .testimonial-content {
@@ -935,12 +947,8 @@ img {
 }
 
 .image-single:hover .hover-state {
+  opacity: 1;
   visibility: visible;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1ac16800), color-stop(20%, #1ac16810), to(#1ac168c7));
-  background-image: -webkit-linear-gradient(#1ac16800 0%, #1ac16810 20%, #1ac168c7 100%);
-  background-image: -o-linear-gradient(#1ac16800 0%, #1ac16810 20%, #1ac168c7 100%);
-  background-image: linear-gradient(#1ac16800 0%, #1ac16810 20%, #1ac168c7 100%);
-  cursor: pointer;
 }
 
 .image-single .hover-state {
@@ -950,6 +958,21 @@ img {
   height: 100%;
   width: 100%;
   border-radius: 14px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1ac16800), color-stop(20%, #1ac16810), to(#1ac168c7));
+  background-image: -webkit-linear-gradient(#1ac16800 0%, #1ac16810 20%, #1ac168c7 100%);
+  background-image: -o-linear-gradient(#1ac16800 0%, #1ac16810 20%, #1ac168c7 100%);
+  background-image: linear-gradient(#1ac16800 0%, #1ac16810 20%, #1ac168c7 100%);
+}
+
+.image-single .hover-state span {
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,13 +982,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  visibility: hidden;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.image-single .hover-state span {
-  font-size: 24px;
-  color: #ffffff;
+  height: 100%;
+  width: 100%;
 }
