@@ -910,10 +910,14 @@ img {
 
 .slick-dots li.slick-active button:before {
   color: #1ac167;
+  border: 1px solid gray;
 }
 
 .slick-dots li button:before {
   font-size: 35px;
+  line-height: 19px;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 .testimonial-single {

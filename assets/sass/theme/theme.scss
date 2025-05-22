@@ -241,12 +241,18 @@
 
   li.slick-active button:before {
     color: $primary-color;
+    border: 1px solid gray;
   }
 
   li button:before {
     font-size: 35px;
+    line-height: 19px;
+    border: 1px solid transparent;
+    border-radius: 50%;
   }
 }
+
+
 
 .testimonial-single {
   padding: 30px;
