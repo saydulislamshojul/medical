@@ -997,14 +997,39 @@ img {
   border-radius: 40px;
 }
 
+@media (max-width: 767.98px) {
+  .subs-area .subs-bg {
+    padding: 40px;
+  }
+}
+
 .subs-area .subs-bg h2 {
   color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .subs-area .subs-bg h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .subs-area .subs-bg h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .subs-area .subs-email,
 .subs-area .subs-btn {
   padding: 24px;
   width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .subs-area .subs-email,
+  .subs-area .subs-btn {
+    padding: 14px;
+  }
 }
 
 .subs-area .subs-email {
