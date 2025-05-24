@@ -365,6 +365,9 @@
   background-color: $off-white;
   position: relative;
 
+  .footer-top{
+    background: url('../images/footer-pattern.png') no-repeat top right/contain;
+  }
 
   .footer-single{
     margin-left: 20px;

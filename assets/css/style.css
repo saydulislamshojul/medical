@@ -1047,6 +1047,10 @@ img {
   position: relative;
 }
 
+.footer .footer-top {
+  background: url("../images/footer-pattern.png") no-repeat top right/contain;
+}
+
 .footer .footer-single {
   margin-left: 20px;
   margin-bottom: 30px;
