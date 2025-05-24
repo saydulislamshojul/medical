@@ -1041,3 +1041,83 @@ img {
   text-transform: capitalize;
   border-radius: 0 10px 10px 0;
 }
+
+.footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.footer .footer-single {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.footer .logo {
+  width: 150px;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.footer .social-icons li a {
+  color: #0b114a;
+  font-size: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.footer .social-icons li a:hover {
+  color: #ffffff;
+  background-color: #1ac167;
+}
+
+.footer .links {
+  margin-top: 20px;
+}
+
+.footer .links li {
+  margin-top: 10px;
+}
+
+.footer .links li a {
+  color: #0b114a;
+  text-transform: capitalize;
+}
+
+.footer .links li .faq {
+  text-transform: none;
+}
+
+.footer .footer-info li {
+  margin-top: 10px;
+}
+
+.footer .footer-info li a {
+  color: #0b114a;
+}
+
+.footer .copyright {
+  background-color: #00005c;
+  margin-top: 40px;
+}
+
+.footer .copyright p {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .copyright p span {
+  color: #1ac167;
+  font-weight: 900;
+}

@@ -318,19 +318,23 @@
 
 .subs-area {
   .subs-bg {
-    background: url('../images/subscribe-pattern.png') no-repeat top right/contain ;
+    background: url('../images/subscribe-pattern.png') no-repeat top right/contain;
     background-color: #00005c;
     padding: 80px;
     border-radius: 40px;
-    @include all-phone{
+
+    @include all-phone {
       padding: 40px;
     }
-    h2{
+
+    h2 {
       color: $white-color;
-      @include tablet{
+
+      @include tablet {
         margin-bottom: 20px;
       }
-      @include all-phone{
+
+      @include all-phone {
         margin-bottom: 20px;
       }
     }
@@ -340,16 +344,99 @@
   .subs-btn {
     padding: 24px;
     width: 100%;
-    @include all-phone{
+
+    @include all-phone {
       padding: 14px;
     }
   }
-  .subs-email{
+
+  .subs-email {
     border: none;
     border-radius: 10px 0 0 10px;
   }
-  .subs-btn{
+
+  .subs-btn {
     text-transform: capitalize;
     border-radius: 0 10px 10px 0;
+  }
+}
+
+.footer {
+  background-color: $off-white;
+  position: relative;
+
+
+  .footer-single{
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .social-icons {
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      text-align: center;
+
+      a {
+        color: $secondary-color;
+        font-size: 20px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: $white-color;
+        border-radius: 8px;
+        transition: $transition;
+
+        &:hover {
+          color: $white-color;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .links {
+    margin-top: 20px;
+
+    li {
+      margin-top: 10px;
+
+      a {
+        color: $secondary-color;
+        text-transform: capitalize;
+      }
+
+      .faq {
+        text-transform: none;
+      }
+    }
+
+  }
+  .footer-info{
+    li{
+      margin-top: 10px;
+
+      a{
+        color: $secondary-color;
+      }
+    }
+  }
+  .copyright{
+    background-color: #00005c;
+    margin-top: 40px;
+    p{
+      color: $white-color;
+      text-align: center;
+      padding: 20px 0;
+      span{
+        color: $primary-color;
+        font-weight: 900;
+      }
+    }
   }
 }
