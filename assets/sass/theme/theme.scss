@@ -31,9 +31,18 @@
       }
     }
 
-
     .primary-btn {
       margin-right: 30px;
+      @include screen-360{
+        margin-right: 10px;
+      }
+    }
+
+    .hero-buttons{
+      @include screen-360{
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -95,6 +104,11 @@
     @include portrait-phone {
       margin-top: 40px;
     }
+    .about-p{
+      @include all-phone{
+        margin-top: 20px;
+      }
+    }
   }
 }
 
@@ -114,6 +128,10 @@
   padding: 40px;
   border: 1px solid $border-color;
   border-radius: 10px;
+
+  @include desktop{
+    padding: 30px;
+  }
 
   .icon {
     font-size: 45px;
@@ -252,17 +270,31 @@
   }
 }
 
-
-
 .testimonial-single {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px $border-color;
   margin: 20px 15px;
 
+  @include all-phone {
+    margin: 20px 5px;
+  }
+
+  .testimonial-image {
+    @include portrait-phone {
+      width: 120px;
+      margin: 0px auto;
+    }
+  }
 
   .testimonial-content {
     padding-left: 10px;
+
+    @include portrait-phone {
+      text-align: center;
+      margin-top: 20px;
+    }
+
   }
 
   span {
@@ -316,18 +348,18 @@
 
 }
 
-.subs-area {
-  .subs-bg {
+.cta-area {
+  .cta-bg {
     background: url('../images/subscribe-pattern.png') no-repeat top right/contain;
     background-color: #00005c;
     padding: 80px;
     border-radius: 40px;
 
     @include all-phone {
-      padding: 40px;
+      padding: 30px;
     }
 
-    h2 {
+    .title {
       color: $white-color;
 
       @include tablet {
@@ -340,106 +372,61 @@
     }
   }
 
-  .subs-email,
-  .subs-btn {
-    padding: 24px;
-    width: 100%;
+}
 
-    @include all-phone {
-      padding: 14px;
-    }
-  }
+.blog-area {
 
-  .subs-email {
-    border: none;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .subs-btn {
-    text-transform: capitalize;
-    border-radius: 0 10px 10px 0;
+  .blog-items {
+    display: block;
   }
 }
 
-.footer {
-  background-color: $off-white;
-  position: relative;
-
-  .footer-top{
-    background: url('../images/footer-pattern.png') no-repeat top right/contain;
+.blog-items{
+  // @include screen-360{
+  //   margin-top: 20px;
+  // }
+  // @include portrait-phone{
+  //   margin-top: 20px;
+  // }
+  @include all-phone{
+    margin-top: 20px;
   }
+}
+.single-blog {
+  margin: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #dadada;
 
-  .footer-single{
-    margin-left: 20px;
-    margin-bottom: 30px;
-  }
+  .blog-content {
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
 
-  .logo {
-    width: 150px;
-  }
-
-  .social-icons {
-    li {
-      display: inline-block;
-      margin-right: 20px;
-      text-align: center;
-
+    .meta-data {
       a {
         color: $secondary-color;
-        font-size: 20px;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        background-color: $white-color;
-        border-radius: 8px;
+        text-transform: capitalize;
         transition: $transition;
 
         &:hover {
-          color: $white-color;
-          background-color: $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+
+    .title {
+      a {
+        color: $secondary-color;
+        font-weight: 800;
+        transition: $transition;
+
+        &:hover {
+          color: $primary-color;
         }
       }
     }
   }
+}
 
-  .links {
-    margin-top: 20px;
-
-    li {
-      margin-top: 10px;
-
-      a {
-        color: $secondary-color;
-        text-transform: capitalize;
-      }
-
-      .faq {
-        text-transform: none;
-      }
-    }
-
-  }
-  .footer-info{
-    li{
-      margin-top: 10px;
-
-      a{
-        color: $secondary-color;
-      }
-    }
-  }
-  .copyright{
-    background-color: #00005c;
-    margin-top: 40px;
-    p{
-      color: $white-color;
-      text-align: center;
-      padding: 20px 0;
-      span{
-        color: $primary-color;
-        font-weight: 900;
-      }
-    }
-  }
+section{
+  overflow: hidden;
 }

@@ -1,0 +1,105 @@
+.footer-area {
+  background-color: $off-white;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../images/footer-pattern.png') no-repeat top right/contain;
+    z-index: -1;
+  }
+
+
+  .footer-widget {
+    margin-bottom: 30px;
+
+    .logo {
+      width: 150px;
+    }
+
+    .social-icons {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        text-align: center;
+
+        a {
+          color: $secondary-color;
+          font-size: 20px;
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          background-color: $white-color;
+          border-radius: 8px;
+          transition: $transition;
+
+          &:hover {
+            color: $white-color;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .links {
+      margin-top: 20px;
+
+      li {
+        margin-top: 10px;
+
+        a {
+          color: $secondary-color;
+          text-transform: capitalize;
+          transition: $transition;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        .faq {
+          text-transform: none;
+        }
+      }
+
+    }
+
+    .footer-info {
+      li {
+        margin-top: 20px;
+
+        a {
+          color: $secondary-color;
+          transition: $transition;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background-color: #00005c;
+    margin-top: 40px;
+
+    p {
+      color: $white-color;
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 0;
+
+      a {
+        color: $primary-color;
+        font-weight: 900;
+      }
+    }
+  }
+}

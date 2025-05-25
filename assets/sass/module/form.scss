@@ -1,0 +1,33 @@
+.cta-form {
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    padding: 24px;
+    width: 70%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+
+    @include all-phone {
+      padding: 14px;
+    }
+  }
+
+  .cta-btn {
+    text-transform: capitalize;
+    padding: 24px;
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+
+    @include all-phone {
+      padding: 14px;
+    }
+    @include screen-360 {
+      padding: 14px 5px 14px;
+    }
+  }
+}
