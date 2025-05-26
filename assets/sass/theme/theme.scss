@@ -33,13 +33,14 @@
 
     .primary-btn {
       margin-right: 30px;
-      @include screen-360{
+
+      @include screen-360 {
         margin-right: 10px;
       }
     }
 
-    .hero-buttons{
-      @include screen-360{
+    .hero-buttons {
+      @include screen-360 {
         display: flex;
         justify-content: center;
       }
@@ -104,8 +105,15 @@
     @include portrait-phone {
       margin-top: 40px;
     }
-    .about-p{
-      @include all-phone{
+
+    .about-p {
+      @include all-phone {
+        margin-top: 20px;
+      }
+    }
+
+    .primary-btn {
+      @include desktop {
         margin-top: 20px;
       }
     }
@@ -129,7 +137,7 @@
   border: 1px solid $border-color;
   border-radius: 10px;
 
-  @include desktop{
+  @include desktop {
     padding: 30px;
   }
 
@@ -143,6 +151,13 @@
     background-color: rgba($primary-color, .2);
     border-radius: 8px;
     transition: $transition;
+
+    @include desktop {
+      font-size: 40px;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+    }
   }
 
   .title {
@@ -154,6 +169,10 @@
         color: $primary-color;
       }
     }
+  }
+
+  .link-page{
+    margin-top: 10px;
   }
 }
 
@@ -189,7 +208,7 @@
     }
 
     @include all-phone {
-      height: 70%;
+      height: 80%;
     }
   }
 
@@ -213,6 +232,14 @@
       display: inline;
       margin: 0px 10px;
 
+      @include desktop {
+        margin: 0px 5px;
+      }
+
+      @include landscape-phone {
+        margin: 0px 5px;
+      }
+
       a {
         color: $white-color;
         background-color: $secondary-color;
@@ -223,6 +250,13 @@
         line-height: 40px;
         border-radius: 50%;
         transition: $transition;
+
+        @include desktop {
+          font-size: 16px;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+        }
 
         &:hover {
           background-color: $primary-color;
@@ -277,6 +311,10 @@
   margin: 20px 15px;
 
   @include all-phone {
+    margin: 20px 5px;
+  }
+
+  @include desktop {
     margin: 20px 5px;
   }
 
@@ -381,17 +419,19 @@
   }
 }
 
-.blog-items{
+.blog-items {
+
   // @include screen-360{
   //   margin-top: 20px;
   // }
   // @include portrait-phone{
   //   margin-top: 20px;
   // }
-  @include all-phone{
+  @include all-phone {
     margin-top: 20px;
   }
 }
+
 .single-blog {
   margin: 20px 15px;
   border-radius: 12px;
@@ -427,6 +467,6 @@
   }
 }
 
-section{
+section {
   overflow: hidden;
 }

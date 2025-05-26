@@ -935,6 +935,12 @@ img {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-area .about-content .primary-btn, .about-area .about-content .secondary-btn {
+    margin-top: 20px;
+  }
+}
+
 .section-top .title span {
   color: #1ac167;
 }
@@ -969,6 +975,15 @@ img {
   transition: all 0.2s ease-in;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service-single .icon {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
 .service-single .title a {
   color: #0b114a;
   -webkit-transition: all 0.2s ease-in;
@@ -978,6 +993,10 @@ img {
 
 .service-single .title a:hover {
   color: #1ac167;
+}
+
+.service-single .link-page {
+  margin-top: 10px;
 }
 
 .link-page {
@@ -1019,7 +1038,7 @@ img {
 
 @media (max-width: 767.98px) {
   .doctor-area::before {
-    height: 70%;
+    height: 80%;
   }
 }
 
@@ -1044,6 +1063,18 @@ img {
   margin: 0px 10px;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .doctor-content .social-icons li {
+    margin: 0px 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .doctor-content .social-icons li {
+    margin: 0px 5px;
+  }
+}
+
 .doctor-content .social-icons li a {
   color: #ffffff;
   background-color: #0b114a;
@@ -1056,6 +1087,15 @@ img {
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .doctor-content .social-icons li a {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
 }
 
 .doctor-content .social-icons li a:hover {
@@ -1109,6 +1149,12 @@ img {
 }
 
 @media (max-width: 767.98px) {
+  .testimonial-single {
+    margin: 20px 5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .testimonial-single {
     margin: 20px 5px;
   }
