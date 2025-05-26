@@ -787,7 +787,6 @@ img {
   margin: 120px 0;
 }
 
-/* hero section */
 .hero-area {
   background: url("../images/hero-bg.png") no-repeat center/cover;
   position: relative;
@@ -1042,7 +1041,7 @@ img {
   }
 }
 
-.doctor-area .doctor-single {
+.doctor-single {
   border-radius: 20px;
   margin-bottom: 30px;
 }

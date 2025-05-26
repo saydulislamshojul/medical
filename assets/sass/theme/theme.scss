@@ -1,4 +1,4 @@
-/* hero section */
+// hero area starts
 .hero-area {
   background: url('../images/hero-bg.png') no-repeat center/cover;
   position: relative;
@@ -80,6 +80,7 @@
   }
 }
 
+// about area starts
 .about-area {
   @include tablet {
     text-align: center;
@@ -128,6 +129,7 @@
   }
 }
 
+// service area starts
 .service-area {
   background-color: $off-white;
 }
@@ -171,7 +173,7 @@
     }
   }
 
-  .link-page{
+  .link-page {
     margin-top: 10px;
   }
 }
@@ -188,6 +190,7 @@
   }
 }
 
+// doctor area starts
 .doctor-area {
   background: url('../images/doctor-pattern.png') no-repeat top right/contain;
   position: relative;
@@ -211,12 +214,11 @@
       height: 80%;
     }
   }
+}
 
-  .doctor-single {
-    border-radius: 20px;
-    margin-bottom: 30px;
-  }
-
+.doctor-single {
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .doctor-content {
@@ -284,6 +286,7 @@
   }
 }
 
+// testimonial area starts
 .testimonial-area {
   position: relative;
 }
@@ -344,6 +347,7 @@
   }
 }
 
+// gallery area starts
 .gallery-area {
   background-color: $off-white;
 }
@@ -386,6 +390,7 @@
 
 }
 
+// cta area starts
 .cta-area {
   .cta-bg {
     background: url('../images/subscribe-pattern.png') no-repeat top right/contain;
@@ -412,6 +417,7 @@
 
 }
 
+// blog area starts
 .blog-area {
 
   .blog-items {
@@ -421,12 +427,6 @@
 
 .blog-items {
 
-  // @include screen-360{
-  //   margin-top: 20px;
-  // }
-  // @include portrait-phone{
-  //   margin-top: 20px;
-  // }
   @include all-phone {
     margin-top: 20px;
   }
