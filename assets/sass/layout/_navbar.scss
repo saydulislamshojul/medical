@@ -1,0 +1,107 @@
+/* navbar */
+.main-menu {
+  @include all-desktop {
+    text-align: right;
+    height: 80px;
+
+    li {
+      display: inline-block;
+      position: relative;
+      margin: 0 15px;
+      line-height: 1.7;
+      z-index: 1;
+
+      &:hover {
+        &.has-submenu {
+          &::after {
+            color: $primary-color;
+          }
+        }
+
+        a {
+          color: $primary-color;
+        }
+
+        .submenu {
+          top: 100%;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &.has-submenu {
+        &::after {
+          content: '\2335';
+          color: $secondary-color;
+          font-size: 12px;
+          font-weight: 700;
+          margin-left: 2px;
+          position: relative;
+          top: -2px;
+          transition: $transition;
+        }
+      }
+
+      a {
+        color: $secondary-color;
+        padding: 30px 0;
+        font-family: $primary-font;
+        font-weight: 600;
+        display: inline-block;
+        text-transform: uppercase;
+        transition: $transition;
+      }
+
+      .submenu {
+        text-align: left;
+        position: absolute;
+        width: 200px;
+        top: 110%;
+        left: 0;
+        background: $white-color;
+        border: 1px solid $border-color;
+        padding: 10px 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+
+        li {
+          display: block;
+          margin: 0;
+
+          a {
+            color: $secondary-color;
+            display: block;
+            padding: 5px 0;
+            width: 100%;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mean-container a.meanmenu-reveal{
+  background-color: $secondary-color;
+  border-radius: 5px;
+  
+  @include tablet{
+    right: 140px !important;
+    top: -62px;
+  }  
+  @include landscape-phone{
+    right: 120px !important;
+    top: -62px;
+  } 
+  @include portrait-phone{
+    right: 20px !important;
+    top: -62px;
+  }
+}
+.mean-container .mean-nav ul li a {
+  background-color: $primary-color;
+  border-bottom: 1px solid $secondary-color;
+}

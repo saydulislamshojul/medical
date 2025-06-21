@@ -65,3 +65,30 @@
 
   }
 }
+
+.menu-area {
+  background-color: $white-color;
+  position: relative;
+  height: 80px;
+
+  @include tablet{
+    display: flex;
+    align-items: center;
+  }
+  @include all-phone{
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right-content {
+    text-align: right;
+
+    @include tablet{
+      text-align: center;
+    }
+
+    @include all-phone {
+      display: none;
+    }
+  }
+}
