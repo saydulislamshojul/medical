@@ -1,0 +1,84 @@
+/* accordion */
+.accordion-area {
+  .accordion-item {
+    border: 1px solid rgba($secondary-color, .2);
+    background-color: transparent;
+    border-radius: 20px;
+
+    +.accordion-item {
+      margin-top: 20px;
+    }
+
+    .s-icon{
+      display: none;
+    }
+    
+    &.active {
+      border: 1px solid $primary-color;
+
+      .accordion-header {
+        padding-bottom: 20px;
+
+        .title {
+          color: $secondary-color;
+          background-color: transparent;
+        }
+
+        .icon {
+          transform: rotate(180deg);
+          color: $white-color;
+          background-color: $primary-color;
+        }
+      }
+
+      .accordion-content {
+        display: block;
+
+        p {
+          color: $secondary-color;
+        }
+      }
+
+      &.accordion-item-2 {
+        border: 1px solid $primary-color;
+
+        .accordion-header {
+          .icon {
+            color: $secondary-color;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .accordion-header {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      .title {
+        color: $secondary-color;
+        width: 90%;
+      }
+
+      .icon {
+        font-size: 20px;
+        color: $white-color;
+        background-color: $black-color;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+      }
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      border-top: 1px solid rgba($secondary-color, .3);
+    }
+  }
+}

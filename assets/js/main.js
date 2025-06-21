@@ -60,13 +60,53 @@
       ]
     })
 
+    // accordion
+        $('.accordion-header').on('click', function () {
+            const $item = $(this).parent();
+            const isActive = $item.hasClass('active');
+            
+            $('.accordion-item').removeClass('active');
+            if (!isActive) {
+                $item.addClass('active');
+            }
+        });
+
+        $('.accordion-item').on('click', function () {
+          const mIcon = $('.m-icon');
+          const sIcon = $('.s-icon');
+
+          mIcon.toggle();
+          sIcon.toggle();
+
+        })
+
+
   })
+
+  $(window).on('scroll', function () {
+        
+      // back to top scroll
+      var ScrollTop = $('.back-to-top');
+      if ($(window).scrollTop() > 1000) {
+          ScrollTop.fadeIn(1000);
+      } else {
+          ScrollTop.fadeOut(1000);
+        }
+
+   });
 
   $(window).on('load', function () {
 
       // preloader
       var preLoder = $("#preloader");
       preLoder.fadeOut(0);
+
+      // back to top animate
+        $(".back-to-top").on('click', function () {
+            $("html").animate({
+                "scrollTop": "0"
+            }, 1000);
+        });
 
   });
 

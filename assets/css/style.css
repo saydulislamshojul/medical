@@ -18,6 +18,7 @@ TABLE OF CONTENTS:
 >> breadcrumb
 >> preloader
 >> button 
+>> accordion
 >> back to top
 >> form
 >> spacing
@@ -455,6 +456,131 @@ img {
   color: #ffffff;
   background-color: #0b114a;
   border: 1px solid #0b114a;
+}
+
+/* accordion */
+.accordion-area .accordion-item {
+  border: 1px solid rgba(11, 17, 74, 0.2);
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.accordion-area .accordion-item + .accordion-item {
+  margin-top: 20px;
+}
+
+.accordion-area .accordion-item .s-icon {
+  display: none;
+}
+
+.accordion-area .accordion-item.active {
+  border: 1px solid #1ac167;
+}
+
+.accordion-area .accordion-item.active .accordion-header {
+  padding-bottom: 20px;
+}
+
+.accordion-area .accordion-item.active .accordion-header .title {
+  color: #0b114a;
+  background-color: transparent;
+}
+
+.accordion-area .accordion-item.active .accordion-header .icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #ffffff;
+  background-color: #1ac167;
+}
+
+.accordion-area .accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-area .accordion-item.active .accordion-content p {
+  color: #0b114a;
+}
+
+.accordion-area .accordion-item.active.accordion-item-2 {
+  border: 1px solid #1ac167;
+}
+
+.accordion-area .accordion-item.active.accordion-item-2 .accordion-header .icon {
+  color: #0b114a;
+  background-color: #1ac167;
+}
+
+.accordion-area .accordion-item .accordion-header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-area .accordion-item .accordion-header .title {
+  color: #0b114a;
+  width: 90%;
+}
+
+.accordion-area .accordion-item .accordion-header .icon {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.accordion-area .accordion-item .accordion-content {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid rgba(11, 17, 74, 0.3);
+}
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: #ffffff;
+  background-color: #1ac167;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  z-index: 9998;
+}
+
+.back-to-top:hover {
+  background-color: #0b114a;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .back-to-top {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .back-to-top {
+    display: none !important;
+  }
 }
 
 .cta-form form {
